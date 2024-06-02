@@ -166,14 +166,14 @@ export default function Page() {
             className="rounded-lg object-cover"
           />
         </div>
-        <div className="relative sm:row-span-2 row-span-1">
+        <div className="relative row-span-2">
           <Image
-            alt="Giving Symposym Presentation about Foodoscope.com"
-            src={meExplainingTechPhoto}
+            alt="Me at IIITD, New Delhi, India."
+            src={meAtIIITD}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="rounded-lg object-cover object-top sm:object-center"
+            className="rounded-lg object-cover sm:object-center"
           />
         </div>
         <div className="relative">
@@ -186,14 +186,15 @@ export default function Page() {
             className="rounded-lg object-cover"
           />
         </div>
-        <div className="relative row-span-2">
+        
+        <div className="relative sm:row-span-2 row-span-1">
           <Image
-            alt="Me at IIITD, New Delhi, India."
-            src={meAtIIITD}
+            alt="Giving Symposym Presentation about Foodoscope.com"
+            src={meExplainingTechPhoto}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="rounded-lg object-cover sm:object-center"
+            className="rounded-lg object-cover object-top sm:object-center"
           />
         </div>
         <div className="relative row-span-2">
