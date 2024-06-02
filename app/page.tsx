@@ -151,7 +151,7 @@ export default function Page() {
             width={20}
             height={20}
             src={timeswap_logo} alt="Timeswap Logo" />
-          <p className='m-0 p-0'>Timeswap</p>
+          <span className='m-0 p-0'>Timeswap</span>
       </Badge>
       .
       </p>
