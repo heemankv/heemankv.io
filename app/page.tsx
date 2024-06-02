@@ -8,7 +8,7 @@ import meExplainingTechPhoto from 'public/images/home/meExplainingTechPhoto.jpg'
 import meAtWorldStartupConvention from 'public/images/home/meAtWorldStartupConvention.jpg';
 import meAtIIITD from 'public/images/home/meAtIIITD.jpg';
 import meExplainingWeb3 from 'public/images/home/meExplainingWeb3.jpg';
-
+import timeswap_logo from 'public/timeswap.svg';
 import TLEEliminators_LogoText from 'public/images/TLEEliminators_LogoText.png';
 import Foodoscope_LogoText from 'public/images/Foodoscope_LogoText.png';
 
@@ -146,20 +146,14 @@ export default function Page() {
         {`I'm a defi full stack developer, startup nerd, and optimist. I currently `}
         <Link href="/work">work</Link>
         {` as the Full Stack Dev at `}
-        <span className="not-prose">
-          <Badge href="https://timeswap.io">
-            <svg
-              width="15"
-              height="11"
-              aria-label="Timeswap logo"
-              className="mr-1 inline-flex"
-            >
-              <use href="/sprite.svg#youtube" />
-            </svg>
-            Timeswap
-          </Badge>
-        </span>
-        .
+        <Badge href="https://timeswap.io" >
+          <Image
+            width={20}
+            height={20}
+            src={timeswap_logo} alt="Timeswap Logo" />
+          <p className='m-0 p-0'>Timeswap</p>
+      </Badge>
+      .
       </p>
       <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
         <div className="relative h-40">
@@ -274,37 +268,22 @@ export default function Page() {
         </p>
       </div>
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
-        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://timeswap.io">
+        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-2 md:px-3 md:py-4 dark:border-neutral-700 dark:bg-neutral-800">
+          <a href="https://timeswap.io"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <Image
               width={100}
               height={100}
             src={Timeswap_LogoText} alt="Timeswap Logo" />
           </a>
         </div>
-        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://www.tle-eliminators.com/">
-            <span className='flex items-center gap-x-1 font-bold text-sm'>
-            <Image src={TLEEliminators_LogoText}
-              width={24}
-              height={60}
-            alt="TLE Eliminators Logo" /> 
-            TLE Eliminators
-            </span>
-          </a>
-        </div>
-        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://meetdexy.ai/">
-            <Image
-              width={90}
-              height={90}
-              className='pt-2'
-            src={DexyAI_LogoText} alt="Dexy AI Logo" />
-          </a>
-        </div>
-       
-        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-        <a href="https://www.foodoscope.com/">
+        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-2 md:px-3 md:py-4 dark:border-neutral-700 dark:bg-neutral-800">
+        <a href="https://www.foodoscope.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
             <span className='flex items-center gap-x-1 font-bold'>
             <Image
               width={100}
@@ -313,9 +292,36 @@ export default function Page() {
             </span>
           </a>
         </div>
+        
+        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-2 md:px-3 md:py-4 dark:border-neutral-700 dark:bg-neutral-800">
+          <a href="https://meetdexy.ai/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Image
+              width={90}
+              height={90}
+              className='pt-2'
+            src={DexyAI_LogoText} alt="Dexy AI Logo" />
+          </a>
+        </div>
+       
+        
+        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-2 md:px-3 md:py-4 dark:border-neutral-700 dark:bg-neutral-800">
+          <a href="https://www.tle-eliminators.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span className='flex items-center gap-x-1 font-bold text-sm'>
+            <Image src={TLEEliminators_LogoText}
+              width={24}
+              height={60}
+            alt="TLE Eliminators Logo" /> 
+            </span>
+          </a>
+        </div>
       </div>
       <div className="prose prose-neutral dark:prose-invert">
-      
       </div>
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
@@ -326,7 +332,18 @@ export default function Page() {
             href={SOCIAL_MEDIA.twitter}
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">follow me</p>
+            <p className="ml-2 h-7">follow me on X</p>
+          </a>
+        </li>
+        <li>
+          <a
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            rel="noopener noreferrer"
+            target="_blank"
+            href={SOCIAL_MEDIA.linkedin}
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">follow me on Linkedin</p>
           </a>
         </li>
         {/* <li>
