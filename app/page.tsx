@@ -346,6 +346,7 @@ export default function Page() {
             <p className="ml-2 h-7">follow me on Linkedin</p>
           </a>
         </li>
+      
         {/* <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
@@ -358,6 +359,23 @@ export default function Page() {
           </a>
         </li> */}
       </ul>
+      <br />
+      <br />
+      <br />
+
+      <hr />
+
+      <div className="prose prose-neutral dark:prose-invert">
+        <p>
+          This website is an adaptation of{' '}
+          <Link href="https://leerob.io/"
+            target='_blank'
+            rel="noopener noreferrer"
+          >Lee Robinson's website</Link>{' '}!
+          I'm grateful to Lee for open-sourcing his website
+          and allowing me to use it as a base for my own.
+        </p>
+      </div>
     </section>
   );
 }
