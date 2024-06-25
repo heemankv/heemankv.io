@@ -55,3 +55,15 @@ CREATE TABLE views (
 3. Crediting the author is appreciated.
 
 Please remove all of my personal information (blog posts, images, etc.) by running `bun run setup`.
+
+
+
+## Project Showcase :
+
+1) Project Title (technical)
+2) text-sm : Project Name
+3) General Description of what project did.
+4) General Description of what I did.
+5) Technical Description of Technologies I worked with.
+6) Regards
+
